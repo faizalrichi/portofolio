@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faizal Richi Candra | Software Engineer & ICT Mentor</title>
+  <meta name="description" content="Portfolio of Faizal Richi Candra, a Software Engineer and ICT Mentor based in Bojonegoro, Indonesia." />
+  <meta name="theme-color" content="#050d1a" />
+
+  <!-- Favicon (1:1) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <img src="assets/apple-touch-icon.png" alt="" class="preloader__logo" />
+    <div class="preloader__bar"><span></span></div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand">Faizal <b>Richi Candra</b></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--sm btn--ghost nav__cta">Hire me</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="cube cube--1"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube--2"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube--3"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <div class="hero__grid">
+        <div class="glass hero__intro" data-tilt>
+          <p class="hero__hello">Hi, I'm</p>
+          <h1 class="hero__name">Faizal Richi Candra</h1>
+          <p class="hero__role"><span id="typing"></span><span class="caret"></span></p>
+          <p class="hero__text">I build efficient web solutions and help future digital talents grow, from Bojonegoro to the wider tech community.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary magnetic">View projects</a>
+            <a href="#contact" class="btn btn--ghost magnetic">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero__photo" id="heroPhoto">
+          <div class="hero__ring"></div>
+          <div class="hero__ring hero__ring--2"></div>
+          <img src="assets/foto-profil.png" srcset="assets/foto-profil-sm.webp 520w, assets/foto-profil.webp 900w" sizes="(max-width:1000px) 340px, 420px" width="900" height="1240" alt="Portrait of Faizal Richi Candra" decoding="async" fetchpriority="high" />
+        </div>
+
+        <div class="hero__side">
+          <div class="glass chip float" style="--d:0s">
+            <span class="chip__label">Based in</span>
+            <strong>Bojonegoro, Indonesia</strong>
+          </div>
+          <div class="glass chip float" style="--d:-2s">
+            <span class="chip__label">Certifications</span>
+            <strong><span class="count" data-to="11">0</span>+ earned</strong>
+          </div>
+          <div class="glass chip float" style="--d:-4s">
+            <span class="chip__label">Full-stack projects</span>
+            <strong><span class="count" data-to="2">0</span> completed</strong>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <h2>About me</h2>
+        <p>Software engineer by craft, teacher by calling.</p>
+      </div>
+      <div class="about">
+        <div class="glass about__card reveal" data-tilt>
+          <div class="about__photo"><img src="assets/foto-profil-square.webp" width="480" height="480" alt="Faizal Richi Candra" loading="lazy" decoding="async" /></div>
+          <ul class="about__facts">
+            <li><span>Role</span>Software Engineer & ICT Mentor</li>
+            <li><span>Background</span>Information Systems</li>
+            <li><span>Location</span>Bojonegoro, Indonesia</li>
+            <li><span>Teaching</span>Informatics, middle and high school</li>
+          </ul>
+        </div>
+        <div class="about__text reveal">
+          <p>I am a Software Engineer and ICT Mentor based in Bojonegoro, dedicated to building efficient technology solutions and empowering future digital talents.</p>
+          <p>With a background in Information Systems, I specialize in web application development. I balance my professional role between developing robust web solutions and teaching Informatics to students at the middle and high school levels. This combination has sharpened my technical capabilities and my ability to explain complex ideas clearly.</p>
+          <p>I am deeply committed to continuous growth, and I actively join bootcamps, training programs, and certifications across a wide range of IT disciplines to keep my skills at the forefront of the industry.</p>
+          <p>I am open to networking and collaboration in software engineering and technology education.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <h2>Technical skills</h2>
+        <p>The tools I use to ship and to teach.</p>
+      </div>
+      <div class="skills">
+        <div class="glass skills__group reveal" data-tilt>
+          <h3>Backend</h3>
+          <div class="tags"><span>PHP</span><span>CodeIgniter 4</span><span>MySQL</span><span>REST APIs</span><span>Database management</span></div>
+          <div class="bar"><label>PHP</label><div><i data-level="90"></i></div></div>
+          <div class="bar"><label>MySQL</label><div><i data-level="88"></i></div></div>
+        </div>
+        <div class="glass skills__group reveal" data-tilt>
+          <h3>Frontend</h3>
+          <div class="tags"><span>JavaScript</span><span>Bootstrap</span><span>Tailwind CSS</span><span>HTML5 & CSS3</span></div>
+          <div class="bar"><label>JavaScript</label><div><i data-level="85"></i></div></div>
+          <div class="bar"><label>Bootstrap / Tailwind</label><div><i data-level="88"></i></div></div>
+        </div>
+        <div class="glass skills__group reveal" data-tilt>
+          <h3>Additional</h3>
+          <div class="tags"><span>Flutter</span><span>Basic cybersecurity</span><span>GenAI integration</span><span>Python</span><span>C++</span><span>RPA (UiPath)</span></div>
+          <div class="bar"><label>GenAI integration</label><div><i data-level="78"></i></div></div>
+          <div class="bar"><label>Flutter</label><div><i data-level="68"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <h2>Featured projects</h2>
+        <p>Two full-stack systems I designed, built, and delivered for a real madrasah.</p>
+      </div>
+      <div class="projects">
+        <article class="glass project reveal" data-tilt>
+          <div class="project__visual mock mock--lab">
+            <div class="mock__bar"><i></i><i></i><i></i></div>
+            <div class="mock__body">
+              <div class="mock__side"></div>
+              <div class="mock__main">
+                <div class="mock__row"><b></b><b></b><b></b></div>
+                <div class="mock__grid"><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u></div>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <p class="project__meta">Computer lab reservation &amp; management · Solo developer</p>
+            <h3>e-Lab Komputer</h3>
+            <p>A web app built for Madrasah Sains Qur'an Ar-Ridwan that replaces manual lab records with a clear digital workflow, from booking a schedule to printing official reports.</p>
+            <ul class="project__list">
+              <li>Conflict-free booking: free computers are calculated automatically for the chosen time slot</li>
+              <li>Role-based access for administrators, teachers, and staff, with admin-approved registration</li>
+              <li>Inventory management with bulk Excel import, plus blocking of classes or accounts with reasons</li>
+              <li>Official A4 reports with MTs/MA letterheads and QR-code digital signatures</li>
+              <li>Dashboard with usage trend charts, notifications, and admin notes</li>
+            </ul>
+            <div class="project__stats">
+              <div><b>7</b><span>database tables</span></div>
+              <div><b>31</b><span>views</span></div>
+              <div><b>6.7K+</b><span>lines of PHP</span></div>
+            </div>
+            <div class="tags"><span>PHP 8.2</span><span>CodeIgniter 4</span><span>MySQL / MariaDB</span><span>JavaScript</span><span>Chart.js</span><span>PhpSpreadsheet</span><span>QR code</span></div>
+          </div>
+        </article>
+
+        <article class="glass project reveal" data-tilt>
+          <div class="project__visual mock mock--abs">
+            <div class="mock__bar"><i></i><i></i><i></i></div>
+            <div class="mock__body">
+              <div class="mock__side"></div>
+              <div class="mock__main">
+                <div class="mock__row"><b></b><b></b><b></b></div>
+                <div class="mock__chart"><u style="--h:40%"></u><u style="--h:70%"></u><u style="--h:55%"></u><u style="--h:90%"></u><u style="--h:65%"></u><u style="--h:80%"></u></div>
+              </div>
+            </div>
+          </div>
+          <div class="project__info">
+            <p class="project__meta">Attendance, teaching hours &amp; fines · Solo developer</p>
+            <h3>e-Absensi Madrasah</h3>
+            <p>A multi-level madrasah system for teacher attendance, class attendance, teaching-hour (JTM) calculation, and late fines, so monthly reports no longer have to be compiled by hand.</p>
+            <ul class="project__list">
+              <li>Teacher check-in/out and per-class attendance with teaching journals and class notes</li>
+              <li>Automatic JTM and late-fine calculation, with rules the administrator can configure</li>
+              <li>Monthly schedules with conflict detection, a color-coded calendar, substitute and duty teachers</li>
+              <li>Official A4 recaps (JTM, attendance, class, journal, notes, fines) with QR-code signatures</li>
+              <li>Three roles (administrator, principal, teacher), login-attempt limits, and an activity log</li>
+            </ul>
+            <div class="project__stats">
+              <div><b>17</b><span>database tables</span></div>
+              <div><b>58</b><span>views</span></div>
+              <div><b>23K+</b><span>lines of PHP</span></div>
+            </div>
+            <div class="tags"><span>PHP 8.2</span><span>CodeIgniter 4</span><span>MySQL / MariaDB</span><span>JavaScript</span><span>Chart.js</span><span>QR code</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="section__head reveal">
+        <h2>Licenses & certifications</h2>
+        <p>Continuous learning, verified.</p>
+      </div>
+      <div class="filters reveal" id="certFilters"></div>
+      <div class="certs" id="certGrid"></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section__head reveal">
+        <h2>Services</h2>
+        <p>How I can help you or your institution.</p>
+      </div>
+      <div class="services">
+        <div class="glass service reveal" data-tilt>
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/></svg>
+          <h3>Web development</h3>
+          <p>Custom web applications with clean back ends, fast interfaces, and maintainable code.</p>
+        </div>
+        <div class="glass service reveal" data-tilt>
+          <svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>
+          <h3>GenAI integration</h3>
+          <p>Adding LLM and Gemini API features to products and workflows, from prototype to production.</p>
+        </div>
+        <div class="glass service reveal" data-tilt>
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5zM7 12v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/></svg>
+          <h3>ICT mentoring</h3>
+          <p>Informatics lessons and workshops that make programming approachable for students.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="section__head reveal">
+        <h2>Work process</h2>
+        <p>From first conversation to a working product.</p>
+      </div>
+      <ol class="process">
+        <li class="reveal"><span>1</span><h3>Discover</h3><p>Understand goals, users, and constraints.</p></li>
+        <li class="reveal"><span>2</span><h3>Design</h3><p>Plan the data model and interface.</p></li>
+        <li class="reveal"><span>3</span><h3>Build</h3><p>Develop in small, testable steps.</p></li>
+        <li class="reveal"><span>4</span><h3>Test</h3><p>Check behavior, security, and speed.</p></li>
+        <li class="reveal"><span>5</span><h3>Launch</h3><p>Deploy, document, and support.</p></li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section__head reveal">
+        <h2>Let's collaborate</h2>
+        <p>Open to software engineering projects and technology education.</p>
+      </div>
+      <div class="contact">
+        <form class="glass contact__form reveal" id="contactForm" novalidate>
+          <label>Name<input type="text" name="name" required autocomplete="name" /></label>
+          <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn--primary magnetic">Send message</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+        <div class="glass contact__side reveal" data-tilt>
+          <h3>Find me online</h3>
+          <div class="social" id="social"></div>
+          <div class="cta">
+            <p>Have a project or a class in mind?</p>
+            <a href="#" class="btn btn--primary magnetic" id="emailBtn">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Faizal Richi Candra</span>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
